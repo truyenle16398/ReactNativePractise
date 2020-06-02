@@ -15,10 +15,6 @@ import { styles } from "../styles/LoginScreenStyle";
 
 const LoginScreen = () => {
     const navigation = useNavigation();
-    const users = {
-        name: "linh",
-        phoneNum: "0974026935"
-    }
     const [acc, setAcc] = useState({
         userName: "",
         password: ""
@@ -53,12 +49,14 @@ const LoginScreen = () => {
                         />
 
                         <TouchableOpacity onPress={() => {
-                            navigation.navigate("ForgotPassScreen", { acc })
+                            alert("asdasasdasdasd")
                         }}>
                             <Text style={styles.forgotPass}>Forgot your Password</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.buttonStyle}>
+                        <TouchableOpacity onPress={() => {
+                            navigation.navigate("ForgotPassScreen", { acc })
+                        }} style={styles.buttonStyle}>
                             <View>
                                 <Text style={
                                     {

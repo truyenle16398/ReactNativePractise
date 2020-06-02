@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 const RouterApp = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="LoginSceen">
+            <Stack.Navigator initialRouteName="ForgotPassScreen">
                 <Stack.Screen name="LoginSceen" component={LoginScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="ForgotPassScreen" component={ForgotPassScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
